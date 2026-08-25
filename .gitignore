@@ -1,0 +1,5 @@
+profile.yaml
+*.json.bak
+stages/03-verify/output/*.json
+__pycache__/
+.venv/

@@ -1,0 +1,11 @@
+ICM Gated Starter
+Copyright (c) 2026 Soulfield
+
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+Interpretable Context Methodology (ICM) is the work of Jake Van Clief and David McDermott
+(arXiv 2603.16021). This kit is one instance of that method; the verify stage, the checks folder,
+the mutant control, and the gate wiring are Soulfield's additions.
+
+The verify stage wires in lens-kit (https://github.com/mrhpython/lens-kit), Apache-2.0,
+Copyright (c) 2026 Soulfield.

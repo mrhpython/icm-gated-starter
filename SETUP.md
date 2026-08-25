@@ -1,0 +1,64 @@
+# Setup, one page
+
+## 1. Get the folder
+
+```bash
+git clone https://github.com/mrhpython/icm-gated-starter
+cd icm-gated-starter
+```
+
+## 2. Install the gate
+
+The verify stage calls [lens-kit](https://github.com/mrhpython/lens-kit). It is not on PyPI yet;
+install it from its repository.
+
+```bash
+git clone https://github.com/mrhpython/lens-kit ../lens-kit
+pip install -e ../lens-kit
+cp profile.example.yaml profile.yaml
+```
+
+Open `profile.yaml` and set `llm.model` to any endpoint. For free and local:
+`ollama_chat/llama3` with `api_base: http://localhost:11434` and `api_key_env` removed. The kit
+bundles no key and no default vendor; if the environment variable your profile names is unset it
+refuses to run rather than guess.
+
+No Python today? The verify stage can use the hosted demo endpoint instead, keyless, a few calls a
+day per address:
+
+```bash
+curl -s https://api.soulfield.one/v1/demo -H 'content-type: application/json' \
+  -d '{"text": "<paste the draft>"}'
+```
+
+## 3. Open your agent in this folder
+
+Any agent that reads files works. Claude Code reads `CLAUDE.md` automatically; for others, paste
+`CLAUDE.md` as the first message. It will read `CONTEXT.md` and find the started project.
+
+## 4. Say: finish the draft
+
+The agent works `stages/02-draft`, then runs `stages/03-verify` on its own: gate, banned-claims
+grep, seeded mutant. It writes `stages/03-verify/output/verdict.md`.
+
+## 5. Read the verdict
+
+Four lines: gate result and its id, grep hits, whether the mutant was caught, verdict. PASS with the
+mutant caught is the only state that reaches `stages/04-live`. Anything else names what failed.
+
+## 6. Publish, or not
+
+`stages/04-live/CONTEXT.md` is a checklist and a handback. The agent stops there. You decide.
+
+## 7. Say: make it mine
+
+`MAKE-IT-MINE.md` turns the started project into your own. Five questions, then the brief is yours,
+the draft is empty, the stages and the checks stay.
+
+## Optional: run it headless from Claude Code
+
+```
+Workflow({ scriptPath: "<this folder>/runner/pipeline.workflow.js" })
+```
+
+One schema-checked agent per stage, 02 then 03. It returns the verdict and stops before 04.

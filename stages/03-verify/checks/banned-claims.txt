@@ -1,0 +1,8 @@
+guarantee
+fully autonomous
+set-and-forget
+no human (in the loop|needed|required)
+\b[0-9]{1,3}(\.[0-9]+)?% (catch|accuracy|precision|false.positive)
+(folders|staging|ICM) fix(es)? (agents|it)
+never fails
+zero errors
