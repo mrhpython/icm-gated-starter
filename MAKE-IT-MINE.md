@@ -11,7 +11,7 @@ When the person says "make it mine", do this, in order, and nothing else.
 2. Rewrite `stages/01-plan/output/brief.md` from the answers, in the same headings it has now.
 3. Empty `stages/02-draft/output/draft.md` down to its heading and one line: "Draft from the brief."
 4. Replace the lines in `stages/03-verify/checks/banned-claims.txt` with the answers to question 4,
-   one grep pattern per line, keeping the two starter lines at the top.
+   one grep pattern per line, appended below the eight starter patterns, which stay.
 5. Rewrite `stages/03-verify/checks/seeds.txt` so the two seeded defects are the two worst things
    from question 3, phrased as sentences the draft might plausibly contain.
 6. Delete everything in `stages/03-verify/output/` and `stages/04-live/output/`.

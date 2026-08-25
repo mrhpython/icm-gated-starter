@@ -1,0 +1,61 @@
+{
+  "id": "3cb43b54-3483-4ccc-aa52-f47b38868ba3",
+  "date": "2026-08-26",
+  "text": "SETUP.md",
+  "tool": "soulfield-lens validate_content (hosted gate), domain marketing",
+  "passed": true,
+  "score": 7.89,
+  "halted": false,
+  "violations_total": 2,
+  "lenses": {
+    "rights": {
+      "passed": true,
+      "violations": []
+    },
+    "truth": {
+      "passed": false,
+      "violations": [
+        {
+          "severity": "warning",
+          "issue": "Unverified specific numerical claim regarding API rate limits and character limits (cross-check: Step 2: 'up to about 5,000 characters per call' and 'a few calls a day per address')"
+        },
+        {
+          "severity": "warning",
+          "issue": "Unverified claim about specific tool behavior (Claude Code reading CLAUDE.md automatically) (cross-check: Step 3: 'Claude Code reads CLAUDE.md automatically')"
+        }
+      ]
+    },
+    "causality": {
+      "passed": true,
+      "violations": []
+    },
+    "definitionalIntegrity": {
+      "passed": true,
+      "violations": []
+    },
+    "contradiction": {
+      "passed": true,
+      "violations": []
+    },
+    "extrapolation": {
+      "passed": true,
+      "violations": []
+    },
+    "structure": {
+      "passed": true,
+      "violations": []
+    },
+    "consistency": {
+      "passed": true,
+      "violations": []
+    },
+    "relevance": {
+      "passed": true,
+      "violations": []
+    },
+    "consciousScan": {
+      "passed": true,
+      "flags": []
+    }
+  }
+}

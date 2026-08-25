@@ -9,8 +9,7 @@ single-agent drafts shipped an arithmetic error a human reader had already misse
 citation, a price that contradicted its own pricing brief, a silently truncated deliverable, and a
 list of real third-party names that a secrets scanner had passed. A staged line with an independent
 gate caught each of those before it shipped. The catching is tested: planted fakes get caught,
-mutated inputs get caught. The long form, each instance with its date, its number and its
-denominator, is the section titled "The receipts" on [api.soulfield.one](https://api.soulfield.one/).
+mutated inputs get caught. The long form is the section titled "The receipts" on [api.soulfield.one](https://api.soulfield.one/).
 
 ## What we do not claim
 
@@ -30,14 +29,15 @@ denominator, is the section titled "The receipts" on [api.soulfield.one](https:/
 
 The kit's public text (this file, `README.md`, `SETUP.md`, the finished draft) goes through
 `stages/03-verify` before it is published, and the results are recorded here, dated, with the ids
-the gate returned. A dated PASS is a receipt, not clearance: the text is re-gated before every
+the gate returned and the full responses committed under `receipts/`. A dated PASS is a receipt, not clearance: the text is re-gated before every
 publish, because gates and models drift.
 
 | Date | Text | Gate id | Grep hits | Mutant caught | Verdict |
 |---|---|---|---|---|---|
-| 2026-08-25 | README.md | 27685647 | 0 | not run (kit text, not a draft) | PASS, one warning: the gate reads the 2026 arXiv id as a future date |
-| 2026-08-25 | RECEIPTS.md (pre-edit text) | dc4bf71d | 0 | not run | PASS, three warnings: author names read as personal data; two wording points, both fixed in this text after the run |
-| pending | SETUP.md, draft.md (once finished) | | | | |
+| 2026-08-25 | README.md | 27685647 (`receipts/2026-08-25-readme.json`) | 0 | not run (kit text, not a draft) | PASS, one warning: the gate reads the 2026 arXiv id as a future date |
+| 2026-08-25 | RECEIPTS.md, pre-edit text | dc4bf71d (`receipts/2026-08-25-receipts.json`) | 0 | not run | PASS, three warnings: author names read as personal data; two wording points, both fixed in this text after the run |
+| 2026-08-26 | SETUP.md | 3cb43b54 (`receipts/2026-08-26-setup.json`) | 0 | not run | PASS, two warnings: the demo limits and Claude Code's map-file behaviour read as unverified; both are documented facts |
+| pending | draft.md, once finished | | | | |
 
 ## Attribution
 

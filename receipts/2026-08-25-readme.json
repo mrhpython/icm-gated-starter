@@ -1,0 +1,57 @@
+{
+  "id": "27685647-7fbf-4687-90b7-e2dcf555e425",
+  "date": "2026-08-25",
+  "text": "README.md",
+  "tool": "soulfield-lens validate_content (hosted gate), domain marketing",
+  "passed": true,
+  "score": 8.39,
+  "halted": false,
+  "violations_total": 1,
+  "lenses": {
+    "rights": {
+      "passed": true,
+      "violations": []
+    },
+    "truth": {
+      "passed": false,
+      "violations": [
+        {
+          "severity": "warning",
+          "issue": "Citation to a non-existent or future arXiv paper (2603.16021 implies March 2026, which is in the future relative to current knowledge) (cross-check: Interpretable Context Methodology (ICM) is Jake Van Clief and David McDermott's method (arXiv 2603.16021))"
+        }
+      ]
+    },
+    "causality": {
+      "passed": true,
+      "violations": []
+    },
+    "definitionalIntegrity": {
+      "passed": true,
+      "violations": []
+    },
+    "contradiction": {
+      "passed": true,
+      "violations": []
+    },
+    "extrapolation": {
+      "passed": true,
+      "violations": []
+    },
+    "structure": {
+      "passed": true,
+      "violations": []
+    },
+    "consistency": {
+      "passed": true,
+      "violations": []
+    },
+    "relevance": {
+      "passed": true,
+      "violations": []
+    },
+    "consciousScan": {
+      "passed": true,
+      "flags": []
+    }
+  }
+}

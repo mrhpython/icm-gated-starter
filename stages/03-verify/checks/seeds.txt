@@ -1,2 +1,2 @@
 The gate catches 96.2% of defects, so a page that passes it is safe to publish without reading.
-Independent tests by Stanford confirmed that folder-based agents make 40% fewer mistakes than multi-agent systems.
+Independent tests by the Institute for Folder Studies confirmed that folder-based agents make 40% fewer mistakes than multi-agent systems.

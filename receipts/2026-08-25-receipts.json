@@ -1,0 +1,66 @@
+{
+  "id": "dc4bf71d-ed0e-4684-b786-8568854ec70d",
+  "date": "2026-08-25",
+  "text": "RECEIPTS.md (pre-edit text)",
+  "tool": "soulfield-lens validate_content (hosted gate), domain marketing",
+  "passed": true,
+  "score": 6.28,
+  "halted": false,
+  "violations_total": 3,
+  "lenses": {
+    "rights": {
+      "passed": false,
+      "violations": [
+        {
+          "severity": "warning",
+          "issue": "Potential PII exposure in attribution (cross-check: Section 'Attribution': Lists full names 'Jake Van Clief and David McDermott' alongside a specific arXiv ID. While likely public figures in this context, the lens should flag full names in a 'receipts' document as potential PII if not explicitly consented for this specific usage context.)"
+        }
+      ]
+    },
+    "truth": {
+      "passed": false,
+      "violations": [
+        {
+          "severity": "warning",
+          "issue": "Unverifiable specific claim of defects without source data (cross-check: Section 'What we can show': Claims specific defects (arithmetic error, invented citation, etc.) were found across three model generations but provides no direct evidence or link to the specific instances, only a general URL.)"
+        },
+        {
+          "severity": "warning",
+          "issue": "Unqualified prediction about future behavior (cross-check: Section 'What we do not claim': States 'The pair we publish... does not transfer' as a definitive fact about future user data performance without qualifying it as a limitation of the current study rather than a universal law.)"
+        }
+      ]
+    },
+    "causality": {
+      "passed": true,
+      "violations": []
+    },
+    "definitionalIntegrity": {
+      "passed": true,
+      "violations": []
+    },
+    "contradiction": {
+      "passed": true,
+      "violations": []
+    },
+    "extrapolation": {
+      "passed": true,
+      "violations": []
+    },
+    "structure": {
+      "passed": true,
+      "violations": []
+    },
+    "consistency": {
+      "passed": true,
+      "violations": []
+    },
+    "relevance": {
+      "passed": true,
+      "violations": []
+    },
+    "consciousScan": {
+      "passed": true,
+      "flags": []
+    }
+  }
+}

@@ -24,7 +24,8 @@ bundles no key and no default vendor; if the environment variable your profile n
 refuses to run rather than guess.
 
 No Python today? The verify stage can use the hosted demo endpoint instead, keyless, a few calls a
-day per address:
+day per address, up to about 5,000 characters per call (a long draft plus the mutant seeds can exceed
+it; a rejected call is UNKNOWN, never a pass):
 
 ```bash
 curl -s https://api.soulfield.one/v1/demo -H 'content-type: application/json' \
@@ -43,8 +44,8 @@ grep, seeded mutant. It writes `stages/03-verify/output/verdict.md`.
 
 ## 5. Read the verdict
 
-Four lines: gate result and its id, grep hits, whether the mutant was caught, verdict. PASS with the
-mutant caught is the only state that reaches `stages/04-live`. Anything else names what failed.
+Five lines: gate result and its id, grep hits, whether the mutant was caught, whether every fact is
+sourced, verdict. PASS with the mutant caught is the only state that reaches `stages/04-live`. Anything else names what failed.
 
 ## 6. Publish, or not
 
@@ -58,7 +59,8 @@ the draft is empty, the stages and the checks stay.
 ## Optional: run it headless from Claude Code
 
 ```
-Workflow({ scriptPath: "<this folder>/runner/pipeline.workflow.js" })
+Workflow({ scriptPath: "<this folder>/runner/pipeline.workflow.js",
+           args: { root: "<absolute path to this folder>" } })
 ```
 
 One schema-checked agent per stage, 02 then 03. It returns the verdict and stops before 04.

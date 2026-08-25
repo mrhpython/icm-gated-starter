@@ -11,7 +11,7 @@ the checks, and the gate wiring are ours. Free, Apache-2.0, no email address req
 
 ```
 icm-gated-starter/
-├── CLAUDE.md                the map: eleven lines, read first, sends the agent to CONTEXT.md
+├── CLAUDE.md                the map: read first, sends the agent to CONTEXT.md
 ├── CONTEXT.md               the desk: what we are building now, decisions made, where we left off
 ├── SETUP.md                 one page: install, run, finish the started project
 ├── MAKE-IT-MINE.md          say "make it mine" and the started project becomes yours
