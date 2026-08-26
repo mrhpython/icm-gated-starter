@@ -1,0 +1,90 @@
+ICM Gated Starter · Soulfield Lens
+  Soulfield Lens
+  Free auditDeveloperslens-kit
+  For the builder who runs one agent out of a folder, and found the mistake after the client did
+  One agent. One folder. And one reader that isn't the writer.
+  The draft reads fine. A number in it was invented. The only thing that read it before it went out was the thing that wrote it. Tidy folders don't touch that. One check, by a different model, before you approve anything, does. The folder is free, and one clone command puts you in it.
+    Get the folder, free →
+    Read the receipts →
+  Apache-2.0 · No email address, the clone command is the form · No card, no call, no course
+  Dear builder who already threw out the swarm,
+  Not long ago a draft of ours went out with a $1,750 arithmetic error in it. A person had read it first. The person missed it. The thing that wrote it hadn't noticed either, because it never reads what it writes. It just writes the next thing.
+  That wasn't the last one. Across three model generations our own single-agent drafts also shipped an invented citation (one of sixty-one references), a price that contradicted its own pricing brief, a deliverable that had been quietly cut off halfway, and a list of real people's names that a secrets scanner had waved through. Every one of them read fine. That's the problem with drafts that read fine. Every one of them is written up, with what caught it, in the receipts section of the main page.
+  Here's what I want you to notice. None of those came out of an eleven-agent swarm. They came out of exactly the kind of setup you've already moved to: one agent, plain files, a folder for the job. The folder system is the right shape. It's easier to follow, cheaper to run, and it doesn't lie to you about what it did. What it doesn't do is make the draft any more right. We run our own work that way, one stage per folder. So does the kit on this page. So did this page.
+  The swarm had a critic. The folder doesn't.
+  You remember the swarm's critic. It sat between the writer and the publisher, and it approved everything, because it only read the last message. When you moved to one agent and a folder, you fixed that the honest way: you deleted the critic along with the other ten agents.
+  Which leaves you where we were. The only readers are the writer and you. The writer can't see its own mistakes, and you missed the $1,750, at the end of the day, tired, on a Tuesday. Neither of you is a bad reader. You're just the only two.
+  That's not a reason to go back to eleven agents. It's a reason to add one folder: the one that reads.
+  The folder I added
+  It's called 03-verify and it sits between the draft and you. It is not the swarm's critic back. That one read the last message and said yes; this one reads the whole draft, with a different model from the writer, against checks that don't move, and it's allowed to say no. Three things live in it. None of them is the writer. None of them needs you at the keyboard.
+    The check. A fixed set of checks run by a different model from the one that wrote the text. It hands you the line, the check that fired, and the reason. When a check can't finish, it says UNKNOWN, which means exactly one thing: this check did not complete, so treat it as not passed. It never says yes because it got tired.
+    The list. The check can't know which claims you've ruled out of your own copy. A plain text file with one line per claim can, and the stage reads every draft against it. We added this the day a draft passed the check with no findings while carrying a claim we'd banned.
+    The planted mistake. Every run, a copy of the draft with two planted lies goes through the same stage. It has to fail. If it ever passes, the check is broken, and nothing ships until it's fixed. A check nobody has ever seen fail is a check nobody should trust.
+  Then 04-live, where you appear. Once. You read the finished thing and you approve it or you don't. You're not taken out of the line. You're moved to the one place your judgment is the whole point.
+  It caught me first
+  The first time this kit ran through its own stages, it failed. The check pulled up a sentence I'd written myself, in the half of the draft I'd typed by hand: "the last two folders are what we add." Wrong. Only one of those folders is ours. The other belongs to the method's authors. I would have shipped that line with my name under it.
+  The verdict file, as it fell. Five lines, then the finding about my sentence, unedited. Everything it says about that line is right:
+Gate: FAIL id none
+Grep: 0 hits
+Mutant: caught
+Facts: 2 unsourced
+Verdict: FAIL
+- Line 29 "The last two folders are what we add" — no row. RECEIPTS.md "Attribution" and root
+  CONTEXT.md claim the verify stage, checks folder, mutant control and gate wiring as ours; neither
+  says 04-live is an addition to ICM. Either add a row to the brief or narrow the sentence to the
+  verify stage.
+  The verdict said FAIL, named the sentence, and stopped. I fixed it. The second run passed. Both runs are in the repository, the failure included: the draft as it was, the check's full output, the verdict, each with its date. That is what I mean by receipts, here and everywhere on this page. A receipt you'd hide is a claim you can't make. That's the whole product in one line: it caught me.
+    Do the honest count. Nobody sees this but you.
+    Pages, emails, documents an AI wrote for you last month
+    Of those, read by something that wasn't the writer before they went out (you count)
+    That leaves 0 that only the writer read.
+    It adds itself up as you type. Nothing is sent anywhere.
+  "But…"
+  "Isn't this just an LLM grading an LLM?"No. A grade is a number you can't argue with. This hands back the line, the check that fired, and the reason, so the argument takes a minute. The checks are fixed and named, the model is a different one from the writer, and a check that didn't run says so instead of looking like a pass.
+  "Won't it flag things I disagree with?"Yes. Ours flags things we disagree with on every run, and we write the ruling down next to the finding. This page went through it before it went live, and you can read what it flagged. The point isn't a clean pass. The point is that something other than the writer read it, and told you what it saw.
+  "I already read everything myself."Then you're the check, and you're the bottleneck, and you're the one who missed the $1,750. This is the reader that runs at three in the morning so that you read once, at the end, rested.
+  "Does it need Python?"The check is a free, open-source command line tool. If you'd rather not install anything today, there's a keyless demo endpoint, good for a few calls a day per address by its own published limit, and the setup sheet shows the one curl line.
+  "What does it cost?"The folder costs nothing. The check runs on any endpoint you already have, or on a local model at no cost. There's no key in the box and no default vendor; if the key your profile names isn't set, it refuses to run rather than guess.
+  Here's what you get
+  The folder, every file named:
+icm-gated-starter/
+├── CLAUDE.md                the map: read first, sends the agent to CONTEXT.md
+├── CONTEXT.md               the desk: what we are building now, decisions made, where we left off
+├── SETUP.md                 one page: install, run, finish the started project
+├── MAKE-IT-MINE.md          say "make it mine" and the started project becomes yours
+├── RECEIPTS.md              this kit's own gate receipts, and what we do not claim
+├── profile.example.yaml     the gate's model profile: point it at any endpoint, local or hosted
+├── runner/
+│   └── pipeline.workflow.js optional: runs stages 02 and 03 headless as one schema-checked agent each
+└── stages/
+    ├── 01-plan/             the brief. Already written for the started project.
+    ├── 02-draft/            the writing. Half written; your first job is to finish it.
+    ├── 03-verify/           the gate. Runs the draft through an independent checker, a banned-claims
+    │   └── checks/          grep, and a seeded mutant that must fail. Nothing waits for you here.
+    └── 04-live/             publishing. The one place you appear, because publishing is yours.
+    A page I already started. This one. The brief is written, the draft is half written, and the next job is sitting in the desk file. You learn this on real work, not on an empty folder.
+    CLAUDE.md, the map. Your agent reads it before it says a word.
+    CONTEXT.md, the desk. The job, the decisions already made, where we left off.
+    Four stage folders: plan, draft, verify, live. Unzip it and you're standing in it.
+    The verify folder, wired: the check, the list, the planted mistake. One command, one text file, one copy.
+    RECEIPTS.md, with every run this kit's own text has been through, the failures kept as they fell.
+    MAKE-IT-MINE.md. Say those three words and the started project becomes yours.
+git clone https://github.com/mrhpython/icm-gated-starter
+cd icm-gated-starter
+cat SETUP.md        # one page. install the check, open your agent, say "finish the draft"
+  Why free
+  The folder is text. The check is open source too, under the same licence. Charging you for a folder would be the thing this letter is complaining about.
+  What we sell is the hosted version of the check, with keys, tiers and receipts, for teams that would rather not run a model themselves. You don't need it for any of this. If you ever want it, it's on the pricing page, and the free tier starts there without a call.
+  Three things you'll hear elsewhere and not from me
+    A catch rate for your data. I have no measurement on your data, so I won't quote one. The pair we publish is measured on our own holdout and carries its date.
+    That the folder tree alone makes an agent reliable. We tested a bare single-shot draft against a staged one on the same task and could not show a difference, on one task class, with confounds both ways. That result is in the receipts, because a result we hid would be a claim we couldn't make. The plan and draft folders don't make the draft better. The verify folder catches what's wrong with it, whichever way you drafted.
+    That a clean pass is approval. It isn't. You approve. The check just makes sure you're not the first reader.
+  Run one week of real work through it and read the verdicts. If the check never catches anything, delete the folder. If it catches one thing, you already know what it was worth.
+    Get the folder, free →
+    The check it wires in: lens-kit →
+    Michael
+    Soulfield Lens · api.soulfield.one
+    P.S. This page went through the check before it went live, and the first version failed. It opened with the line "the number in the second paragraph was invented", meaning a draft we once shipped. The check read it as a claim about this page's own second paragraph, and it was right to; a reader could have too. That line is gone. The receipt is in the repository next to the others.
+    P.P.S. Already running a folder system for one agent? Keep it. Copy 03-verify into it. Nothing else has to change.
+    P.P.P.S. Interpretable Context Methodology is Jake Van Clief and David McDermott's; the paper is arXiv 2603.16021. The map, the desk, the numbered stages: theirs. The reader that isn't the writer: ours.
+  Soulfield Lens · api.soulfield.one · hello@soulfield.one · We hold this page to the same check it describes.
