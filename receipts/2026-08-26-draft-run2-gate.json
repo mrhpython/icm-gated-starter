@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "halted": false,
+  "halt_reason": "",
+  "violations": [],
+  "consciousness_flags": [],
+  "per_lens": {
+    "rights": true,
+    "truth": true,
+    "causality": true,
+    "definitionalIntegrity": true,
+    "contradiction": true,
+    "extrapolation": true,
+    "structure": true,
+    "consistency": true
+  }
+}

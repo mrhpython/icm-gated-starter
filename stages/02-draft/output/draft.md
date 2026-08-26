@@ -6,8 +6,8 @@ The draft read fine. The number in the second paragraph was invented. The citati
 The only reader before it went out was the thing that wrote it, and it was confident.
 
 That is the failure the folder-system idea does not touch. One agent with a map, a desk, and tidy
-numbered stages is easier to follow than a swarm, and it still ships whatever it wrote, because
-nothing between the draft and the world is looking with different eyes.
+numbered stages still ships whatever it wrote, because nothing between the draft and the world is
+looking with different eyes.
 
 ## What is in the folder
 
@@ -26,7 +26,7 @@ icm-gated-starter/
 ```
 
 The map, the desk, and the numbered stages are Jake Van Clief and David McDermott's Interpretable
-Context Methodology. The last two folders are what we add.
+Context Methodology. The verify stage is what we add.
 
 YOUR TURN. Finish the draft with these sections, in this order, from the brief only:
 

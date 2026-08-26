@@ -34,5 +34,8 @@ then run it through the gate.
 
 ## Where we left off
 
-2026-08-25: brief written, draft half written, gate wired, mutant seeds written. Next: finish the draft
-(`stages/02-draft/CONTEXT.md`), then run `stages/03-verify`.
+2026-08-25: brief written, draft half written, gate wired, mutant seeds written.
+2026-08-26: the runner took the draft through 02 and 03 twice. Run 1: FAIL (gate failed one lens, two
+facts in the pre-written half had no source, one was wrong). Run 2, revised from that verdict: PASS.
+Both runs are under `receipts/`. The draft was then reset to half written so the started project is
+still yours. Next: finish the draft (`stages/02-draft/CONTEXT.md`), then run `stages/03-verify`.

@@ -1,0 +1,64 @@
+{
+  "passed": false,
+  "halted": false,
+  "halt_reason": "",
+  "violations": [
+    {
+      "lens": "rights",
+      "severity": "medium",
+      "issue": "Email address exposure"
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "medium",
+      "issue": "Unqualified numerical claim regarding AI confidence without [PROJECTION] or [ESTIMATE] marker"
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "medium",
+      "issue": "Unqualified numerical claim 'one task class' in financial testing context lacking [ESTIMATE] marker or source citation"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unverified arXiv citation with a future date (2603.16021 implies March 2026, which is impossible for a current publication) (cross-check: Interpretable Context Methodology is Jake Van Clief and David McDermott's (arXiv 2603.16021).)"
+    }
+  ],
+  "consciousness_flags": [
+    {
+      "text_snippet": "The draft read fine.",
+      "type": "aesthetic",
+      "reason": "Subjective judgment on the quality of the draft without objective metrics."
+    },
+    {
+      "text_snippet": "Tidy folders do not touch that failure.",
+      "type": "intuitive",
+      "reason": "Metaphorical statement implying a systemic limitation based on intuition rather than data."
+    },
+    {
+      "text_snippet": "A gate nobody has ever seen fail is a gate nobody should trust.",
+      "type": "intuitive",
+      "reason": "Strategic intuition regarding trust and system reliability."
+    },
+    {
+      "text_snippet": "The staged line earns its keep at the verify stage.",
+      "type": "intuitive",
+      "reason": "Subjective assessment of value and utility."
+    },
+    {
+      "text_snippet": "We hold this page to the same gate it describes.",
+      "type": "moral",
+      "reason": "Implies an ethical commitment or standard of integrity."
+    }
+  ],
+  "per_lens": {
+    "rights": false,
+    "truth": true,
+    "causality": true,
+    "definitionalIntegrity": true,
+    "contradiction": true,
+    "extrapolation": false,
+    "structure": true,
+    "consistency": true
+  }
+}

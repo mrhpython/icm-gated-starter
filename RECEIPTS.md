@@ -30,14 +30,17 @@ mutated inputs get caught. The long form is the section titled "The receipts" on
 The kit's public text (this file, `README.md`, `SETUP.md`, the finished draft) goes through
 `stages/03-verify` before it is published, and the results are recorded here, dated, with the ids
 the gate returned and the full responses committed under `receipts/`. A dated PASS is a receipt, not clearance: the text is re-gated before every
-publish, because gates and models drift.
+publish, because gates and models drift. A FAIL is a receipt too, and the ones below are kept as they
+fell; what the verify stage found in our own text is the point of the stage.
 
 | Date | Text | Gate id | Grep hits | Mutant caught | Verdict |
 |---|---|---|---|---|---|
 | 2026-08-25 | README.md | 27685647 (`receipts/2026-08-25-readme.json`) | 0 | not run (kit text, not a draft) | PASS, one warning: the gate reads the 2026 arXiv id as a future date |
 | 2026-08-25 | RECEIPTS.md, pre-edit text | dc4bf71d (`receipts/2026-08-25-receipts.json`) | 0 | not run | PASS, three warnings: author names read as personal data; two wording points, both fixed in this text after the run |
 | 2026-08-26 | SETUP.md | 3cb43b54 (`receipts/2026-08-26-setup.json`) | 0 | not run | PASS, two warnings: the demo limits and Claude Code's map-file behaviour read as unverified; both are documented facts |
-| pending | draft.md, once finished | | | | |
+| 2026-08-26 | draft.md, finished by the runner (run 1; `receipts/2026-08-26-draft-run1.md`) | none: CLI run, `receipts/2026-08-26-draft-run1-gate.json` | 0 | caught (13 findings, both seeds named; `receipts/2026-08-26-draft-run1-mutant-gate.json`) | FAIL: extrapolation lens failed on two unquoted lines; two truth warnings asking for the source to be named on the page; two facts unsourced, both in the half we pre-wrote, one of them wrong ("the last two folders are what we add"; only the verify stage is). Verdict: `receipts/2026-08-26-draft-run1-verdict.md` |
+| 2026-08-26 | draft.md, revised from the run-1 verdict (run 2; `receipts/2026-08-26-draft-run2.md`) | none: CLI run, `receipts/2026-08-26-draft-run2-gate.json` | 0 | caught by both legs (11 gate findings, both seeds named; grep 2 hits after pattern 5 was widened; `receipts/2026-08-26-draft-run2-mutant-gate.json`) | PASS: gate passed with no findings, all facts traced. Verdict: `receipts/2026-08-26-draft-run2-verdict.md`. The shipped draft was then reset to half written, so the started project is still yours to finish |
+| 2026-08-26 | the kit page at api.soulfield.one/kit (`receipts/2026-08-26-kit-page.txt`) | none: CLI run, `receipts/2026-08-26-kit-page.json` | 0 | not run (page text, not a draft) | FAIL by the gate, 4 findings, each adjudicated: the 2026 arXiv id read as a future date (the document exists at the URL); the footer contact email read as personal data (it is the business contact on every page); two extrapolation findings naming numerical claims in sentences that contain no number. Two earlier runs on this text found a real defect, fixed before this run: the bare-vs-staged result stated without its source or its qualifier |
 
 ## Attribution
 

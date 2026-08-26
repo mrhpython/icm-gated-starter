@@ -1,0 +1,38 @@
+{
+  "passed": false,
+  "halted": false,
+  "halt_reason": "",
+  "violations": [
+    {
+      "lens": "extrapolation",
+      "severity": "high",
+      "issue": "Future claim stated as certainty without confidence level or estimate marker"
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "medium",
+      "issue": "Financial/Performance implication stated as certainty without basis"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unsubstantiated claim that the hosted demo endpoint 'needs no key' and is 'good for a few calls a day per address' without providing a source or verification method for these specific rate limits and authentication requirements. (cross-check: Section 'Why a verify stage', paragraph 2: 'There is also a hosted demo endpoint at api.soulfield.one that needs no key, good for a few calls a day per address.')"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unverified assertion that the authors' own single-agent drafts 'shipped defects' that were later caught, presented as a factual receipt without linking to the specific evidence in RECEIPTS.md or describing the defects. (cross-check: Section 'Why a verify stage', paragraph 5: 'Our own single-agent drafts shipped defects that a staged line with a gate later caught.')"
+    }
+  ],
+  "consciousness_flags": [],
+  "per_lens": {
+    "rights": true,
+    "truth": true,
+    "causality": true,
+    "definitionalIntegrity": true,
+    "contradiction": true,
+    "extrapolation": false,
+    "structure": true,
+    "consistency": true
+  }
+}

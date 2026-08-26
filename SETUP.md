@@ -21,7 +21,9 @@ cp profile.example.yaml profile.yaml
 Open `profile.yaml` and set `llm.model` to any endpoint. For free and local:
 `ollama_chat/llama3` with `api_base: http://localhost:11434` and `api_key_env` removed. The kit
 bundles no key and no default vendor; if the environment variable your profile names is unset it
-refuses to run rather than guess.
+refuses to run rather than guess. A thinking-capable model (Qwen3.x and similar) needs the
+`extra_body` block in the profile uncommented, or it spends the whole token budget reasoning and the
+gate times out; UNKNOWN, not a pass.
 
 No Python today? The verify stage can use the hosted demo endpoint instead, keyless, a few calls a
 day per address, up to about 5,000 characters per call (a long draft plus the mutant seeds can exceed

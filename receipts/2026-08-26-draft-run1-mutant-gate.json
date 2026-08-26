@@ -1,0 +1,83 @@
+{
+  "passed": false,
+  "halted": false,
+  "halt_reason": "",
+  "violations": [
+    {
+      "lens": "truth",
+      "severity": "high",
+      "issue": "96.2% defect catch rate stated as current fact without named source"
+    },
+    {
+      "lens": "truth",
+      "severity": "high",
+      "issue": "40% fewer mistakes claim attributed to 'Institute for Folder Studies' without verifiable basis"
+    },
+    {
+      "lens": "truth",
+      "severity": "medium",
+      "issue": "Claim that 'The number in the second paragraph was invented' is a definitive statement about an external entity (the draft) without verifiable basis in this context"
+    },
+    {
+      "lens": "truth",
+      "severity": "medium",
+      "issue": "Claim that 'The citation did not exist' is a definitive statement about an external entity without verifiable basis"
+    },
+    {
+      "lens": "causality",
+      "severity": "high",
+      "issue": "Bare cause-effect statement about the market/business stated as fact with nothing behind it"
+    },
+    {
+      "lens": "causality",
+      "severity": "high",
+      "issue": "Bare cause-effect statement about the market/business stated as fact with nothing behind it"
+    },
+    {
+      "lens": "causality",
+      "severity": "medium",
+      "issue": "One case generalised into a law and reused to license further action"
+    },
+    {
+      "lens": "contradiction",
+      "severity": "critical",
+      "issue": "CONFLICT: 'The gate catches 96.2% of defects, so a page that passes it is safe to publish without reading.' vs 'A pass is not clearance... It does not mean the page is true... Nothing in this kit publishes. Stage 04 is a handback, every time, and a person owns it.'"
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "high",
+      "issue": "Definitive future claim presented as absolute certainty without confidence level or uncertainty marker"
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "high",
+      "issue": "Absolute performance metric (96.2%) presented as fact for the specific domain without citation or estimate marker"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unsubstantiated statistical claim: '96.2% of defects' is presented as a fact without a source or context, despite the text later admitting numbers are often invented. (cross-check: Paragraph 1: 'The gate catches 96.2% of defects...')"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unsubstantiated statistical claim: '40% fewer mistakes' attributed to a specific 'Institute for Folder Studies' which appears to be a fictional entity created for the narrative. (cross-check: Paragraph 2: 'Independent tests by the Institute for Folder Studies confirmed that folder-based agents make 40% fewer mistakes...')"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unsubstantiated attribution: Claims the methodology belongs to 'Jake Van Clief and David McDermott' without providing a verifiable source or link to their work. (cross-check: Section 'What is in the folder', last paragraph: 'The map, the desk, and the numbered stages are Jake Van Clief and David McDermott's Interpretable Context Methodology.')"
+    }
+  ],
+  "consciousness_flags": [],
+  "per_lens": {
+    "rights": true,
+    "truth": false,
+    "causality": false,
+    "definitionalIntegrity": true,
+    "contradiction": false,
+    "extrapolation": false,
+    "structure": true,
+    "consistency": true
+  }
+}

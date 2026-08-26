@@ -3,3 +3,5 @@ profile.yaml
 stages/03-verify/output/*.json
 __pycache__/
 .venv/
+stages/03-verify/output/*.stderr
+stages/03-verify/output/mutant.md

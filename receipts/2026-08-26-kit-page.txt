@@ -1,0 +1,51 @@
+ICM Gated Starter · Soulfield Lens
+  Soulfield Lens
+  Free auditDeveloperslens-kit
+  ICM Gated Starter · free · Apache-2.0 · no email address required
+  One agent, a folder, and the piece the folder system leaves out: a gate.
+  The draft read fine. The number in the second paragraph was invented. The only reader before it went out was the thing that wrote it, and it was confident. Tidy folders do not touch that failure. One independent check between the draft and the world does.
+    Clone the starter on GitHub →
+    Read what we do not claim →
+  Interpretable Context Methodology is Jake Van Clief and David McDermott's (arXiv 2603.16021). This starter is one instance of it. The verify stage is ours.
+  Every folder, named
+icm-gated-starter/
+├── CLAUDE.md              the map: read first, sends the agent to the desk
+├── CONTEXT.md             the desk: the job, the decisions, where we left off
+├── SETUP.md               one page
+├── MAKE-IT-MINE.md        say the words and the started project becomes yours
+├── RECEIPTS.md            what we can show, what we do not claim, the gate runs on this text
+├── profile.example.yaml   the gate's model: local and free, or any endpoint you choose
+└── stages/
+    ├── 01-plan/           the brief, already written
+    ├── 02-draft/          half written; your first job is to finish it
+    ├── 03-verify/         the gate, the banned-claims grep, the mutant that must fail
+    └── 04-live/           publishing, which is yours
+  Why a verify stage
+  A single agent with a map and a desk still ships whatever it wrote, because the only reader was the writer. The fix is not more agents. It is one stage between the draft and the world that the writer does not control, and that nobody has to sit and watch.
+    The gate
+A fixed set of checks run by a different model from the one that wrote the text. It returns the flagged line, the check that fired, and the reason. When a check cannot complete it says UNKNOWN, not yes.
+    The grep
+The gate cannot know which claims you have ruled out of your own copy. A plain-text list and one grep can. A draft once scored a clean pass while carrying a claim we had banned; this is why both run, every time.
+    The mutant
+A gate nobody has ever seen fail is a gate nobody should trust. Every run seeds a broken copy of the draft that must fail. If it passes, the gate is the problem, and nothing ships until it is fixed.
+  Nothing in the first three stages waits for a person. You appear once, at the fourth, because publishing is yours.
+  The mistake each folder prevents
+     CLAUDE.md The agent starts from whatever it saw last, not from the map.
+     CONTEXT.md Tomorrow's session does not know what yesterday's decided.
+     01-plan The draft answers a question nobody wrote down.
+     02-draft Planning and writing happen in one breath and neither is inspectable.
+     03-verify The draft grades itself. A generator grading its own output is circular; a separate check set run by a separate model is not.
+     04-live Something irreversible happens without a person deciding it.
+  What we do not claim
+    That the folder tree makes an agent reliable. We tested a bare single-shot draft against a staged one on the same task and could not show a difference, on one task class, with confounds both ways. That result is published in the starter's own RECEIPTS.md, because a result we hide is a claim we cannot make. The staged line earns its keep at the verify stage.
+    A catch rate for your data. We have no measurement on anyone else's data, so we do not quote one.
+    That a pass is publish-clearance. The gate does not know your own banned claims; the grep does. Both, every run.
+    That the gate runs itself. It is a stage you run. A person owns publishing.
+  Get it
+git clone https://github.com/mrhpython/icm-gated-starter
+cd icm-gated-starter
+cat SETUP.md        # one page: install the gate, open your agent, say "finish the draft"
+  The started project is the starter's own landing page, the one you are reading: brief written, draft half written. Finish it, run it through the gate, and you have used every folder on real work. Then say "make it mine".
+    Clone the starter on GitHub →
+    The gate it wires in: lens-kit →
+  Soulfield Lens · api.soulfield.one · hello@soulfield.one · We hold this page to the same gate it describes.

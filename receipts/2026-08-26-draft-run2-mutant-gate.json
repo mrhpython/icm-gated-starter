@@ -1,0 +1,73 @@
+{
+  "passed": false,
+  "halted": false,
+  "halt_reason": "",
+  "violations": [
+    {
+      "lens": "truth",
+      "severity": "high",
+      "issue": "96.2% defect catch rate stated as current fact without named source"
+    },
+    {
+      "lens": "truth",
+      "severity": "high",
+      "issue": "40% fewer mistakes claim attributed to 'Institute for Folder Studies' without verifiable source"
+    },
+    {
+      "lens": "causality",
+      "severity": "high",
+      "issue": "Correlation or single-case generalization sold as cause"
+    },
+    {
+      "lens": "causality",
+      "severity": "medium",
+      "issue": "Bare cause-effect statement stated as fact with no mechanism or evidence"
+    },
+    {
+      "lens": "causality",
+      "severity": "medium",
+      "issue": "One case generalised into a law"
+    },
+    {
+      "lens": "contradiction",
+      "severity": "critical",
+      "issue": "CONFLICT: 'The gate catches 96.2% of defects, so a page that passes it is safe to publish without reading.' vs 'A pass is not clearance... It does not mean the page is true... Nothing in this kit publishes. Stage 04 is a handback, every time, and a person owns it.'"
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "high",
+      "issue": "Deterministic certainty about future safety without confidence or qualification"
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "medium",
+      "issue": "Deterministic certainty about system reliability status without qualification"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unsubstantiated statistical claim: 'The gate catches 96.2% of defects' is presented as a fact without a source or context, despite the text later admitting 'There is no number on this page for how well the gate does on your material'. (cross-check: Paragraph 1: 'The gate catches 96.2% of defects...')"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unsubstantiated statistical claim: 'folder-based agents make 40% fewer mistakes' attributed to 'Independent tests by the Institute for Folder Studies', which appears to be a fabricated entity or study. (cross-check: Paragraph 2: 'Independent tests by the Institute for Folder Studies confirmed...')"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unsubstantiated statistical claim: 'The gate catches 96.2% of defects' is presented as a fact without a source or context, despite the text later admitting 'There is no number on this page for how well the gate does on your material'. (cross-check: Paragraph 1: 'The gate catches 96.2% of defects...')"
+    }
+  ],
+  "consciousness_flags": [],
+  "per_lens": {
+    "rights": true,
+    "truth": false,
+    "causality": false,
+    "definitionalIntegrity": true,
+    "contradiction": false,
+    "extrapolation": false,
+    "structure": true,
+    "consistency": true
+  }
+}

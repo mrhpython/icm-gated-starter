@@ -25,6 +25,7 @@ only reader before it went out was the thing that wrote it.
 | The gate does not know your own banned claims; the grep does | `RECEIPTS.md`, "What we do not claim" |
 | The seeded mutant must fail every run or the gate is not trusted | `stages/03-verify/CONTEXT.md` |
 | A person owns publishing | `stages/04-live/CONTEXT.md` |
+| The map, the desk, and the numbered stages are ICM's; the verify stage, its checks, the mutant control, and the gate wiring are ours | `RECEIPTS.md`, "Attribution" |
 
 ## Never say
 
