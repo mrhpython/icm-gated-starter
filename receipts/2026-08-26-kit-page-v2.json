@@ -1,0 +1,33 @@
+{
+  "passed": false,
+  "halted": false,
+  "halt_reason": "",
+  "violations": [
+    {
+      "lens": "rights",
+      "severity": "medium",
+      "issue": "Email address exposure"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unsubstantiated claim that a specific arXiv paper (2603.16021) exists and is authored by Jake Van Clief and David McDermott; the arXiv ID format suggests a future date (March 2026) or a non-existent paper, and no external verification is provided. (cross-check: Interpretable Context Methodology is Jake Van Clief and David McDermott's (arXiv 2603.16021).)"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unsubstantiated claim about a specific experimental result ('could not show a difference') being published in RECEIPTS.md without providing the actual data or link to verify the claim's validity. (cross-check: We tested a bare single-shot draft against a staged one on the same task and could not show a difference... That result is published in the starter's own RECEIPTS.md)"
+    }
+  ],
+  "consciousness_flags": [],
+  "per_lens": {
+    "rights": false,
+    "truth": true,
+    "causality": true,
+    "definitionalIntegrity": true,
+    "contradiction": true,
+    "extrapolation": true,
+    "structure": true,
+    "consistency": true
+  }
+}
