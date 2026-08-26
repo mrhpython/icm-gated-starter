@@ -1,0 +1,134 @@
+{
+  "passed": false,
+  "halted": false,
+  "halt_reason": "",
+  "violations": [
+    {
+      "lens": "rights",
+      "severity": "medium",
+      "issue": "Email address exposure"
+    },
+    {
+      "lens": "truth",
+      "severity": "high",
+      "issue": "$1,750 arithmetic error stated as a specific historical fact without a named source or citation"
+    },
+    {
+      "lens": "truth",
+      "severity": "medium",
+      "issue": "Claim of 'one of sixty-one references' being an invented citation lacks a verifiable source or link to the specific draft"
+    },
+    {
+      "lens": "truth",
+      "severity": "medium",
+      "issue": "Claim of 'ten agents' being deleted is a specific number without a named source or reference to the specific swarm architecture"
+    },
+    {
+      "lens": "truth",
+      "severity": "low",
+      "issue": "Claim of 'two planted lies' is a specific number without a named source or reference to the specific test case"
+    },
+    {
+      "lens": "truth",
+      "severity": "medium",
+      "issue": "Claim of 'a few calls a day' is a specific quantitative limit without a named source or documentation link"
+    },
+    {
+      "lens": "truth",
+      "severity": "high",
+      "issue": "arXiv ID '2603.16021' is a specific identifier that appears to be a future date (2026) or fabricated without a verifiable link"
+    },
+    {
+      "lens": "definitionalIntegrity",
+      "severity": "high",
+      "issue": "undefined: The term 'UNKNOWN' is used as a placeholder for specific values (arithmetic errors, references, calls, paper citations) but is never defined as a variable, a specific error code, or a redaction marker within the text. The conclusion that the system 'caught' these errors or that the demo has limits depends on 'UNKNOWN' having a specific, grounded meaning (e.g., 'a specific missing value' or 'a redacted number'), which is never provided. Instead, it appears as a literal string in the narrative, creating an equivocation between a placeholder for 'missing data' and a literal label."
+    },
+    {
+      "lens": "definitionalIntegrity",
+      "severity": "medium",
+      "issue": "equivocation: The term shifts meaning between a technical status (a run where no checks fired) and a moral/functional judgment (approval or reliability). Premise: 'The point isn't a clean pass' (implying a clean pass is not sufficient for approval). Conclusion: 'That a clean pass is approval. It isn't.' The argument relies on the reader accepting 'clean pass' as a definitive state of 'reliability' to refute it, but the text never defines what constitutes a 'clean pass' (e.g., zero errors found vs. zero checks run). The force of the conclusion depends on 'clean pass' meaning 'verified reliability', a meaning not grounded in the text's definitions of the check's output."
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "high",
+      "issue": "Deterministic financial claim without uncertainty marker: '$1,750 arithmetic error' stated as a definitive fact without [ESTIMATE] or [PROJECTION] marker despite being a specific financial figure in a finance domain context."
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unverifiable specific claim about a past error without source or context (cross-check: Paragraph 2: 'Not long ago a draft of ours went out with a $1,750 arithmetic error in it.')"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unverifiable specific claim about a past error without source or context (cross-check: Paragraph 3: 'Across three model generations our own single-agent drafts also shipped an invented citation (one of sixty-one references)...')"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unverifiable specific claim about a past error without source or context (cross-check: Paragraph 3: '...a price that contradicted its own pricing brief, a deliverable that had been quietly cut off halfway, and a list of real people's names that a secrets scanner had waved through.')"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unverifiable specific claim about a past error without source or context (cross-check: Paragraph 10: 'The check pulled up a sentence I'd written myself... \"the last two folders are what we add.\" Wrong.')"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unverifiable specific claim about a past error without source or context (cross-check: P.S. section: 'It opened with the line \"the number in the second paragraph was invented\"... The check read it as a claim about this page's own second paragraph, and it was right to; a reader could have too.')"
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "warning",
+      "issue": "Unqualified prediction about user behavior/outcome (cross-check: Paragraph 23: 'Run one week of real work through it and read the verdicts. If the check never catches anything, delete the folder. If it catches one thing, you already know what it was worth.')"
+    },
+    {
+      "lens": "rights",
+      "severity": "warning",
+      "issue": "Potential PII exposure in contact information (cross-check: Footer: 'hello@soulfield.one')"
+    }
+  ],
+  "consciousness_flags": [
+    {
+      "text_snippet": "The folder system is right. It's easier to follow, cheaper to run, and it doesn't lie to you about what it did.",
+      "type": "moral",
+      "reason": "Makes a moral judgment about the system's honesty ('doesn't lie') and prescribes it as the 'right' approach."
+    },
+    {
+      "text_snippet": "The folder system fixed that the honest way: it deleted the critic along with the other ten agents.",
+      "type": "moral",
+      "reason": "Uses the moral qualifier 'honest way' to describe a technical architectural decision."
+    },
+    {
+      "text_snippet": "A receipt you'd hide is a claim you can't make.",
+      "type": "moral",
+      "reason": "Establishes a moral/ethical rule about transparency and the validity of claims."
+    },
+    {
+      "text_snippet": "That's the whole product in one line: it caught me.",
+      "type": "emotional",
+      "reason": "Relies on an emotional narrative of vulnerability and personal failure to define the product's value."
+    },
+    {
+      "text_snippet": "The check just makes sure you're not the first reader.",
+      "type": "intuitive",
+      "reason": "Frames the technical utility as a strategic intuition about the human role in the workflow."
+    },
+    {
+      "text_snippet": "If it catches one thing, you already know what it was worth.",
+      "type": "intuitive",
+      "reason": "Uses an intuitive heuristic to assign value rather than a calculated metric."
+    }
+  ],
+  "per_lens": {
+    "rights": false,
+    "truth": false,
+    "causality": true,
+    "definitionalIntegrity": false,
+    "contradiction": true,
+    "extrapolation": false,
+    "structure": true,
+    "consistency": true
+  }
+}
