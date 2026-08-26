@@ -39,10 +39,14 @@ curl -s https://api.soulfield.one/v1/demo -H 'content-type: application/json' \
 Any agent that reads files works. Claude Code reads `CLAUDE.md` automatically; for others, paste
 `CLAUDE.md` as the first message. It will read `CONTEXT.md` and find the started project.
 
-## 4. Say: finish the draft
+## 4. Say: finish the draft. Then say: run stages/03-verify
 
-The agent works `stages/02-draft`, then runs `stages/03-verify` on its own: gate, banned-claims
-grep, seeded mutant. It writes `stages/03-verify/output/verdict.md`.
+Two prompts, on purpose. Stages are stopping points: the agent works `stages/02-draft`, writes the
+file, and stops, because stage 02 tells it not to run the gate on its own work. The second prompt
+runs `stages/03-verify`: gate, banned-claims grep, seeded mutant. It writes
+`stages/03-verify/output/verdict.md`. (Measured 2026-08-27: given only "finish the draft", one agent
+finished the draft and stopped, exactly as stage 02 says; the optional runner below carries the
+work across both stages with a separate agent for each, without a second prompt.)
 
 ## 5. Read the verdict
 
