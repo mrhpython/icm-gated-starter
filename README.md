@@ -52,6 +52,11 @@ The checker this kit wires in is [lens-kit](https://github.com/mrhpython/lens-ki
 the same licence, runnable on your own machine against a local model, or against any endpoint you
 choose. The receipts for what it catches, and what we do not claim for it, are in `RECEIPTS.md`.
 
+**Want to see what the check does before you clone anything?** Paste text into it in your browser
+at <https://soulfield.one/#try> — five runs a day, no sign-up, no key. You get the flagged line, the
+reason it was flagged, and which checks raised nothing. It is the same lens set this kit wires in.
+A run that raises nothing means the checks found nothing they could name — it is not clearance to publish.
+
 ## Start
 
 Read `SETUP.md`. Two minutes if you already have Python.
