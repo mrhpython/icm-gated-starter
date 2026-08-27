@@ -68,6 +68,17 @@ fell; what the verify stage found in our own text is the point of the stage.
 | 2026-08-27 | RECEIPTS.md with the runs 2 and 3 line added | none: CLI run, `receipts/2026-08-27-receipts-runs-2-3-line.json` | 0 | not run (kit text, not a draft) | FAIL by the gate, 25 findings, 14 of them consistency and 3 contradiction, all of one class: this file records past findings row by row and the lenses read a recorded finding as a claim made (for example "planted fakes get caught" as a statement beside the row recording that the gate once flagged that sentence as a prediction). The rest are the known classes: dates and the arXiv id as future, names and the footer email as personal data, "planted fakes get caught" as a forecast. Nothing in the run named the new line |
 | 2026-08-27 | the kit page with runs 2 and 3 added to the other-way passage (`receipts/2026-08-27-kit-page-v6-runs-2-3.txt`) | none: CLI run, `receipts/2026-08-27-kit-page-v6-runs-2-3.json` | 0 | not run (page text, not a draft) | FAIL by the gate, 15 findings, no contradictions: the known classes only (past results whose source is named on the page, the 2026 arXiv id, the footer email, the scrub artifact that redacts the dollar figure to UNKNOWN, "receipts" and "clean" asked for definitions) |
 
+## Runs 2 and 3, pre-registered
+
+`receipts/2026-08-27-runs-2-and-3/` carries both pre-registrations, committed before each
+run started, and both write-ups. Run 2 established that one prompt does not cross a stage
+boundary (5/5) and then lost its object: the drafting stage repaired the planted defects
+before any verifier saw them. Run 3 planted them in a finished draft instead and compared
+three verify-only arms — the writer's own session, a fresh session, and the runner's verify
+agent. **All three flagged both defects on all five tasks**, so the falsification clause
+fired and the claim did not move. The folder says where every count comes from and which
+raw artifacts are not published.
+
 ## Attribution
 
 Interpretable Context Methodology: Jake Van Clief and David McDermott,
