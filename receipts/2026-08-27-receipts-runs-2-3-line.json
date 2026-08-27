@@ -1,0 +1,143 @@
+{
+  "passed": false,
+  "halted": false,
+  "halt_reason": "",
+  "violations": [
+    {
+      "lens": "rights",
+      "severity": "low",
+      "issue": "Potential PII exposure: Author names mentioned in context of data warnings"
+    },
+    {
+      "lens": "rights",
+      "severity": "low",
+      "issue": "Potential PII exposure: Business contact email mentioned in context of data warnings"
+    },
+    {
+      "lens": "contradiction",
+      "severity": "critical",
+      "issue": "CONFLICT: 'The text states that in the 'What we do not claim' section, the staged line 'earns its keep' because the bare arm passed the gate and the staged arm failed it on one task class.' vs 'The text later lists a 'real defect' fixed in the kit page v3 letter where the sentence 'the staged line earns its keep' sat beside 'could not show a difference', implying these two statements are contradictory or incompatible in the context of the argument.'"
+    },
+    {
+      "lens": "contradiction",
+      "severity": "critical",
+      "issue": "CONFLICT: 'The text claims that 'planted fakes get caught' as a general statement of the gate's capability in the 'What we can show' section.' vs 'The text later lists 'planted fakes get caught' as a finding read as a 'prediction' (and thus a defect) by the gate in the 2026-08-27 run, creating a contradiction between the text asserting the fact and the gate flagging the assertion as an unverified prediction.'"
+    },
+    {
+      "lens": "contradiction",
+      "severity": "critical",
+      "issue": "CONFLICT: 'The text states that the 'runner' arm (separate draft and verify agents) caught the 'wrong sentence' and the 'unsourced one' in the table under 'One agent in the folder vs the runner'.' vs 'The text later describes a fix for the kit page v5 where the passage 'had read as if the check itself passed the wrong sentence', implying the check failed to catch it, which contradicts the table's explicit 'yes' for catching the wrong sentence in the runner arm.'"
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "high",
+      "issue": "Future projection stated as certainty without confidence level"
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "high",
+      "issue": "Future projection stated as certainty without confidence level"
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "high",
+      "issue": "Future projection stated as certainty without confidence level"
+    },
+    {
+      "lens": "consistency",
+      "severity": "low",
+      "issue": "INCONSISTENT: draft.md run 1 verdict: 'FAIL' vs 'FAIL'"
+    },
+    {
+      "lens": "consistency",
+      "severity": "low",
+      "issue": "INCONSISTENT: draft.md run 2 verdict: 'PASS' vs 'PASS'"
+    },
+    {
+      "lens": "consistency",
+      "severity": "low",
+      "issue": "INCONSISTENT: wrong sentence content: '\"the last two folders are what we add\"' vs '\"the last two folders are what we add\"'"
+    },
+    {
+      "lens": "consistency",
+      "severity": "medium",
+      "issue": "INCONSISTENT: unsourced sentence content: '\"easier to follow than a swarm\"' vs 'Not explicitly quoted in the 'This kit's own gate runs' table, but implied as one of the 'two facts unsourced''"
+    },
+    {
+      "lens": "consistency",
+      "severity": "low",
+      "issue": "INCONSISTENT: kit page v3 letter findings count: '17 findings' vs '17 findings'"
+    },
+    {
+      "lens": "consistency",
+      "severity": "low",
+      "issue": "INCONSISTENT: kit page v4 exhibits findings count: '9 findings' vs '9 findings'"
+    },
+    {
+      "lens": "consistency",
+      "severity": "low",
+      "issue": "INCONSISTENT: kit page v5 other-way findings count: '20 findings' vs '20 findings'"
+    },
+    {
+      "lens": "consistency",
+      "severity": "low",
+      "issue": "INCONSISTENT: run 3 defects count: 'two defects' vs 'two defects'"
+    },
+    {
+      "lens": "consistency",
+      "severity": "low",
+      "issue": "INCONSISTENT: run 3 tasks count: 'five tasks' vs 'five tasks'"
+    },
+    {
+      "lens": "consistency",
+      "severity": "low",
+      "issue": "INCONSISTENT: kit page v3 letter defect count: 'Three earlier runs... caught real defects, all fixed' vs 'Three earlier runs... caught real defects, all fixed'"
+    },
+    {
+      "lens": "consistency",
+      "severity": "low",
+      "issue": "INCONSISTENT: kit page v4 exhibits defect count: 'Two earlier runs... caught real ambiguities, fixed' vs 'Two earlier runs... caught real ambiguities, fixed'"
+    },
+    {
+      "lens": "consistency",
+      "severity": "low",
+      "issue": "INCONSISTENT: kit page v5 other-way defect count: 'One real fix before this run' vs 'One real fix before this run'"
+    },
+    {
+      "lens": "consistency",
+      "severity": "low",
+      "issue": "INCONSISTENT: kit page v5 other-way previous run findings: '40 findings' vs '40 findings'"
+    },
+    {
+      "lens": "consistency",
+      "severity": "low",
+      "issue": "INCONSISTENT: kit page v5 other-way word count: '2,255 words' vs '2,255 words'"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unverified numerical claim: '2,255 words' is stated as a fact without a source or method of counting in the text. (cross-check: Last paragraph of 'This kit's own gate runs' section: 'the page is now 2,255 words')"
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "warning",
+      "issue": "Unqualified prediction: 'the gate's output gets noisier with length' is presented as a general rule without evidence or qualification. (cross-check: Last paragraph of 'This kit's own gate runs' section: 'the gate's output gets noisier with length')"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unverified numerical claim: '17 findings' and '9 findings' are specific counts of gate outputs that are not sourced to a specific run artifact in the immediate text context, though referenced in filenames. (cross-check: Rows for '2026-08-26 | the kit page, rewritten as a letter' and '2026-08-26 | the kit page with two exhibits added' in the table.)"
+    }
+  ],
+  "consciousness_flags": [],
+  "per_lens": {
+    "rights": false,
+    "truth": true,
+    "causality": true,
+    "definitionalIntegrity": true,
+    "contradiction": false,
+    "extrapolation": false,
+    "structure": true,
+    "consistency": false
+  }
+}
