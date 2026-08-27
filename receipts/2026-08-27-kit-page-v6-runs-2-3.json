@@ -1,0 +1,139 @@
+{
+  "passed": false,
+  "halted": false,
+  "halt_reason": "",
+  "violations": [
+    {
+      "lens": "rights",
+      "severity": "medium",
+      "issue": "Email address exposure"
+    },
+    {
+      "lens": "truth",
+      "severity": "high",
+      "issue": "$1,750 arithmetic error has no named source or verifiable receipt link"
+    },
+    {
+      "lens": "truth",
+      "severity": "high",
+      "issue": "one of sixty-one references has no named source or verifiable receipt link"
+    },
+    {
+      "lens": "truth",
+      "severity": "medium",
+      "issue": "two planted lies has no named source or verifiable receipt link"
+    },
+    {
+      "lens": "truth",
+      "severity": "medium",
+      "issue": "2 unsourced facts has no named source or verifiable receipt link"
+    },
+    {
+      "lens": "truth",
+      "severity": "medium",
+      "issue": "Line 29 has no named source or verifiable receipt link"
+    },
+    {
+      "lens": "truth",
+      "severity": "medium",
+      "issue": "five tasks has no named source or verifiable receipt link"
+    },
+    {
+      "lens": "truth",
+      "severity": "medium",
+      "issue": "a few calls a day per address has no named source or verifiable receipt link"
+    },
+    {
+      "lens": "truth",
+      "severity": "high",
+      "issue": "arXiv 2603.16021 has no named source or verifiable receipt link"
+    },
+    {
+      "lens": "definitionalIntegrity",
+      "severity": "medium",
+      "issue": "undefined: The term 'UNKNOWN' is used as a load-bearing status indicator for checks and data points (e.g., '$1,750 [UNKNOWN] arithmetic error', 'treat it as not passed'), but the text never explicitly defines what 'UNKNOWN' signifies in the context of the verification logic other than a vague 'did not complete'. In a finance domain, a specific status code or error state must be rigorously defined to distinguish between 'missing data', 'calculation failure', or 'unverified claim'. The text relies on the reader inferring the precise semantic weight of 'UNKNOWN' to accept the argument that the system is robust, yet the definition is buried in a parenthetical example ('means exactly one thing: this check did not complete') rather than a formal definition, creating ambiguity about whether 'UNKNOWN' implies a hard failure or a soft warning in all contexts."
+    },
+    {
+      "lens": "definitionalIntegrity",
+      "severity": "low",
+      "issue": "equivocation: The term 'clean' shifts meaning between a colloquial sense of 'error-free' and a technical sense of 'passed the automated check'. In the phrase 'The point isn't a clean pass', 'clean' implies a perfect, unflagged result. However, earlier the text argues that 'Tidy folders don't touch that' (referring to errors), and later states 'That a clean pass is approval. It isn't.' The argument relies on the reader accepting that a 'clean pass' (no flags) is not equivalent to 'correctness' (no errors), but the text uses 'clean' interchangeably with 'passed' and 'error-free' without distinguishing the gap between the two. The conclusion that 'you approve' depends on the reader understanding that 'clean' (no flags) != 'correct', but the text never explicitly defines 'clean' as 'no flags found' versus 'no errors exist', leading to a potential equivocation where the user might assume a 'clean' result means the document is safe."
+    },
+    {
+      "lens": "definitionalIntegrity",
+      "severity": "low",
+      "issue": "undefined: The term 'receipts' is used as a central load-bearing concept ('Read the receipts', 'A receipt you'd hide is a claim you can't make') to ground the entire argument for trust. However, the text never defines what constitutes a 'receipt' in this specific system beyond a vague reference to 'the draft as it was, the check's full output, the verdict'. In a finance context, a 'receipt' implies a specific, immutable, auditable record. The text uses the term metaphorically and technically without pinning down the exact data structure or content requirements that make a 'receipt' valid, relying on the reader to accept the metaphor as a definition."
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "medium",
+      "issue": "Financial figure '$1,750' presented as a factual historical event without explicit citation or source marker in a strict finance domain context"
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "low",
+      "issue": "Quantitative claims 'two planted lies' and 'sixty-one references' lack [ESTIMATE] or [SOURCE] markers"
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "medium",
+      "issue": "Implied performance guarantee 'Five tasks... Every one of them caught both defects, every time' lacks confidence interval or [PROJECTION] marker"
+    }
+  ],
+  "consciousness_flags": [
+    {
+      "text_snippet": "The folder system is the right shape.",
+      "type": "intuitive",
+      "reason": "Makes a strategic judgment about the 'shape' of a system without empirical proof, relying on a feeling of correctness."
+    },
+    {
+      "text_snippet": "it doesn't lie to you about what it did",
+      "type": "moral",
+      "reason": "Attributes moral agency (lying) to a technical system and makes a moral conclusion about its honesty."
+    },
+    {
+      "text_snippet": "you fixed that the honest way",
+      "type": "moral",
+      "reason": "Labels a technical decision (deleting agents) as 'honest', applying a moral judgment to a workflow choice."
+    },
+    {
+      "text_snippet": "A check nobody has ever seen fail is a check nobody should trust.",
+      "type": "intuitive",
+      "reason": "A heuristic rule of thumb presented as a universal truth rather than a statistical probability."
+    },
+    {
+      "text_snippet": "That is the failure this page is about, on this page's own text.",
+      "type": "emotional",
+      "reason": "Frames a technical error as a narrative 'failure' with emotional weight, rather than just a bug."
+    },
+    {
+      "text_snippet": "That result is in the repository next to the first, because a result I hid would be a claim I could not make.",
+      "type": "moral",
+      "reason": "Establishes a moral imperative regarding transparency and the ethics of hiding data."
+    },
+    {
+      "text_snippet": "The point isn't a clean pass. The point is that something other than the writer read it, and told you what it saw.",
+      "type": "intuitive",
+      "reason": "Defines the 'point' or value of the system based on a philosophical stance rather than a functional metric."
+    },
+    {
+      "text_snippet": "Charging you for a folder would be the thing this letter is complaining about.",
+      "type": "moral",
+      "reason": "Frames a pricing decision as a moral complaint, implying an ethical stance against charging for open text."
+    },
+    {
+      "text_snippet": "If the check never catches anything, delete the folder.",
+      "type": "intuitive",
+      "reason": "A strategic recommendation based on a heuristic intuition about value rather than a calculated cost-benefit analysis."
+    }
+  ],
+  "per_lens": {
+    "rights": false,
+    "truth": false,
+    "causality": true,
+    "definitionalIntegrity": false,
+    "contradiction": false,
+    "extrapolation": false,
+    "structure": true,
+    "consistency": false
+  }
+}
