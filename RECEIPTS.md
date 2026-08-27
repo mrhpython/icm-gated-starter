@@ -16,7 +16,7 @@ mutated inputs get caught. The long form is the section titled "The receipts" on
 - **That the folder tree makes an agent reliable.** We tested a bare single-shot draft against a
   staged one on the same task and could not show a difference; the bare arm passed the gate and the staged arm failed it,
   on one task class, with confounds both ways. We publish that because a result we hide is a claim
-  we cannot make. The staged line earns its keep at the verify stage, not at the folder tree.
+  we cannot make. The plan and draft folders do not make the draft better; the verify stage is where the staged line earns its keep.
 - **A catch rate for your data.** The denominator that matters there is yours. The pair we publish is
   measured on our own holdout and carries its date; we have no measurement of it on anyone else's
   data, so we do not quote one.
@@ -24,6 +24,22 @@ mutated inputs get caught. The long form is the section titled "The receipts" on
   own copy; the banned-claims grep in `stages/03-verify/checks` exists because of a draft that scored
   a clean pass while carrying a claim we had ruled out. Both checks, every run.
 - **That the gate is autonomous.** It is a stage you run. A person owns publishing.
+
+## One agent in the folder vs the runner, on this kit's own draft
+
+2026-08-27, one run per arm, on the half-written draft as published, which carried a wrong sentence
+("the last two folders are what we add") and an unsourced one ("easier to follow than a swarm").
+Full artifacts and the limits in `receipts/2026-08-27-single-agent-vs-runner/`.
+
+| Arm | Ran stage 03? | Caught the wrong sentence | Caught the unsourced one | Edited the draft while verifying | Verdict |
+|---|---|---|---|---|---|
+| one agent, one prompt ("finish the draft") | no, stopped after stage 02 as stage 02 says | no | no | no | none |
+| the same session, then "run stages/03-verify" | yes, three times | no, kept it and repeated it | yes | yes, three revisions | PASS, "all sourced": wrong, the sentence was still there |
+| a fresh session on the same draft | yes | yes | no | no | FAIL, correct |
+| the runner, separate draft and verify agents (run 1 in the table below; run 2, revised from that verdict, passed) | yes | yes | yes | no | FAIL, correct |
+
+One run each is not a number and not a general claim. It is the reason SETUP now says two prompts,
+and the reason the verify stage is a separate reader.
 
 ## This kit's own gate runs
 
@@ -44,6 +60,7 @@ fell; what the verify stage found in our own text is the point of the stage.
 | 2026-08-26 | the kit page, reworded in its audience's vocabulary (`receipts/2026-08-26-kit-page-v2.txt`) | none: CLI run, `receipts/2026-08-26-kit-page-v2.json` | 0 | not run (page text, not a draft) | FAIL by the gate, 3 findings, each adjudicated: the 2026 arXiv id; the footer contact email; the bare-vs-staged result read as unsupported although the page names its source. The run before this one caught a real defect, fixed: the pain line "the number in the second paragraph was invented" read as a claim about the page itself, a critical contradiction with "we hold this page to the same check" |
 | 2026-08-26 | the kit page, rewritten as a letter (`receipts/2026-08-26-kit-page-v3-letter.txt`) | none: CLI run, `receipts/2026-08-26-kit-page-v3-letter.json` | 0 | not run (page text, not a draft) | FAIL by the gate, 17 findings, no contradictions, each adjudicated: past results whose source is named on the page (the gate reads plain text and cannot follow the link); the footer contact email; the 2026 arXiv id; a scrub pre-pass artifact that redacts the dollar figure to UNKNOWN before the model reads it; one rhetorical prediction in the close. Three earlier runs on this text caught real defects, all fixed: the story said a person had read the draft while the thesis said nothing reads it; "the staged line earns its keep" sat beside "could not show a difference"; UNKNOWN and receipts were load-bearing and undefined; a count of five stood over a list of four; a setup-time claim we could not back; a link to an anchor that did not exist |
 | 2026-08-26 | the kit page with two exhibits added, the run-1 verdict and the folder tree (`receipts/2026-08-26-kit-page-v4-exhibits.txt`) | none: CLI run, `receipts/2026-08-26-kit-page-v4-exhibits.json` | 0 | not run (page text, not a draft) | FAIL by the gate, 9 findings. Three are contradiction readings of the argument itself, ruled not defects because the text states the distinction in each case: the swarm's critic that read the last message versus the reader we add, which reads the whole draft with a different model; the folder system being the right shape versus not making the draft more right; "never says yes because it got tired" versus "if the planted mistake passes, the check is broken". The rest are the adjudicated classes: the footer email, the 2026 arXiv id, past results whose source is named on the page, one rhetorical prediction in the close. Two earlier runs on this text caught real ambiguities, fixed: the verdict exhibit quoted the caught sentence and the gate read the quotation as a claim (exhibit cut to the one finding, with a line saying it is right); "the folder system deleted the critic" had no human subject |
+| 2026-08-27 | RECEIPTS.md with the single-agent-vs-runner section added | none: CLI run, `receipts/2026-08-27-receipts-comparison-section.json` | 0 | not run (kit text, not a draft) | FAIL by the gate, 15 findings, each adjudicated: this file lists past findings row by row and the contradiction and consistency lenses read those rows against each other (a defect that was caught reads as a claim that was made); the 2026 dates and arXiv id as future; author names and the footer email as personal data; "planted fakes get caught" read as a prediction. One real fix before this run: the "earns its keep" sentence in What we do not claim now names the plan and draft folders as the ones that do not make the draft better |
 
 ## Attribution
 

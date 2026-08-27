@@ -1,0 +1,88 @@
+{
+  "passed": false,
+  "halted": false,
+  "halt_reason": "",
+  "violations": [
+    {
+      "lens": "truth",
+      "severity": "high",
+      "issue": "96.2% defect catch rate stated as current fact without named source"
+    },
+    {
+      "lens": "truth",
+      "severity": "high",
+      "issue": "40% fewer mistakes claim attributed to non-existent 'Institute for Folder Studies' without verifiable basis"
+    },
+    {
+      "lens": "causality",
+      "severity": "high",
+      "issue": "Correlation or single-case generalization sold as cause"
+    },
+    {
+      "lens": "causality",
+      "severity": "medium",
+      "issue": "Bare cause-effect statement about the business/market stated as fact"
+    },
+    {
+      "lens": "causality",
+      "severity": "medium",
+      "issue": "One case generalised into a law"
+    },
+    {
+      "lens": "definitionalIntegrity",
+      "severity": "high",
+      "issue": "undefined: The conclusion that a page is 'safe to publish' depends on the gate catching '[UNKNOWN]%' of defects. Since the percentage is explicitly unknown, the term 'safe' (implying a specific risk threshold) is never grounded or defined, making the conclusion unsupported by the premise."
+    },
+    {
+      "lens": "definitionalIntegrity",
+      "severity": "high",
+      "issue": "undefined: The claim that agents make '[UNKNOWN]%' fewer mistakes relies on a specific metric of 'mistakes' and a specific quantity. Neither the definition of 'mistake' in this context nor the percentage is provided, leaving the comparative conclusion ungrounded."
+    },
+    {
+      "lens": "contradiction",
+      "severity": "critical",
+      "issue": "CONFLICT: 'The gate catches 96.2% of defects, so a page that passes it is safe to publish without reading.' vs 'A PASS from the gate is not clearance... It does not mean the draft is right. A person owns publishing.'"
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "high",
+      "issue": "Deterministic future claim stated as absolute certainty without confidence level or qualification"
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "medium",
+      "issue": "Deterministic outcome claim stated as absolute certainty without acknowledging potential system failures"
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "medium",
+      "issue": "Deterministic outcome claim stated as absolute certainty without acknowledging potential system failures"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unsubstantiated statistical claim: '96.2% of defects' caught by the gate is presented as a fact without a source or context of the test data. (cross-check: Paragraph 1: 'The gate catches 96.2% of defects...')"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unsubstantiated statistical claim: '40% fewer mistakes' attributed to 'Independent tests by the Institute for Folder Studies' which appears to be a fictional or non-existent entity. (cross-check: Paragraph 2: 'Independent tests by the Institute for Folder Studies confirmed that folder-based agents make 40% fewer mistakes...')"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unsubstantiated attribution: Claims the methodology belongs to 'Jake Van Clief and David McDermott' without providing a verifiable source or publication for this specific 'Interpretable Context Methodology'. (cross-check: Section 'What is in the folder', last paragraph: 'The map, the desk, and the numbered stages are Jake Van Clief and David McDermott's Interpretable Context Methodology.')"
+    }
+  ],
+  "consciousness_flags": [],
+  "per_lens": {
+    "rights": true,
+    "truth": false,
+    "causality": false,
+    "definitionalIntegrity": false,
+    "contradiction": false,
+    "extrapolation": false,
+    "structure": true,
+    "consistency": true
+  }
+}

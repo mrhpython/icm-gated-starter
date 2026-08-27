@@ -1,0 +1,36 @@
+diff --git a/stages/02-draft/output/draft.md b/stages/02-draft/output/draft.md
+index 8db8d1a..76a8c77 100644
+--- a/stages/02-draft/output/draft.md
++++ b/stages/02-draft/output/draft.md
+@@ -6,8 +6,8 @@ The draft read fine. The number in the second paragraph was invented. The citati
+ The only reader before it went out was the thing that wrote it, and it was confident.
+ 
+ That is the failure the folder-system idea does not touch. One agent with a map, a desk, and tidy
+-numbered stages is easier to follow than a swarm, and it still ships whatever it wrote, because
+-nothing between the draft and the world is looking with different eyes.
++numbered stages still ships whatever it wrote, because nothing between the draft and the world is
++looking with different eyes.
+ 
+ ## What is in the folder
+ 
+@@ -45,8 +45,8 @@ Beside the grep sits a mutant: a copy of the draft with defects seeded into it o
+ mutant must fail every run. If it passes, the gate is not trusted that run, whatever it said about
+ the real draft.
+ 
+-The checker can run locally against a local model at no cost. There is also a hosted demo endpoint
+-at api.soulfield.one that needs no key and allows a few calls per day per address, enough to try it
++The checker can run locally against a local model at no cost. There is also a hosted demo endpoint,
++named in SETUP.md, that needs no key and allows a few calls per day per address, enough to try it
+ before you run it on your own machine.
+ 
+ We built this because our own single-agent drafts shipped defects that a staged line with a gate
+@@ -57,8 +57,7 @@ later caught. That is the receipt, and it is the whole reason the last two folde
+ We do not have a number for how well the gate does on your data. We have not run it on your data.
+ Any number we gave you would be the kind of number this page is about.
+ 
+-We could not show that staging alone beats a bare draft. The folders make the work easier to follow.
+-Whether they make it more correct, we could not show, and we say so.
++We could not show that staging alone beats a bare draft. We publish that.
+ 
+ A PASS from the gate is not clearance. It means the fixed checks found nothing and the mutant failed
+ as it should. It does not mean the draft is right.

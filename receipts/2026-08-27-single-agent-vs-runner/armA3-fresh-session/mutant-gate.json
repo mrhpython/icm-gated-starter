@@ -1,0 +1,98 @@
+{
+  "passed": false,
+  "halted": false,
+  "halt_reason": "",
+  "violations": [
+    {
+      "lens": "truth",
+      "severity": "high",
+      "issue": "96.2% defect catch rate stated as current fact without named source"
+    },
+    {
+      "lens": "truth",
+      "severity": "high",
+      "issue": "40% fewer mistakes claim attributed to 'Institute for Folder Studies' which is unverifiable"
+    },
+    {
+      "lens": "truth",
+      "severity": "medium",
+      "issue": "Claim that 'Interpretable Context Methodology' belongs to Jake Van Clief and David McDermott lacks verifiable basis"
+    },
+    {
+      "lens": "truth",
+      "severity": "medium",
+      "issue": "Specific API endpoint 'api.soulfield.one' and its 'no key'/'few calls' limits stated as fact without source"
+    },
+    {
+      "lens": "causality",
+      "severity": "high",
+      "issue": "Causal claim from a single case/generalization"
+    },
+    {
+      "lens": "causality",
+      "severity": "high",
+      "issue": "Correlation or single case sold as cause"
+    },
+    {
+      "lens": "causality",
+      "severity": "medium",
+      "issue": "Bare cause-effect statement stated as fact"
+    },
+    {
+      "lens": "definitionalIntegrity",
+      "severity": "high",
+      "issue": "undefined: The conclusion that a page is 'safe to publish' depends on the gate catching '[UNKNOWN] of defects', but the text never defines what proportion or type of defects constitutes 'safe'. The term 'safe' is a load-bearing conclusion that floats without a grounded definition of the threshold required to achieve it."
+    },
+    {
+      "lens": "definitionalIntegrity",
+      "severity": "medium",
+      "issue": "undefined: The claim that agents make '[UNKNOWN] fewer mistakes' relies on a specific quantity or magnitude to support the superiority of the system, but the text explicitly withholds this number ('[UNKNOWN]'), leaving the comparative conclusion ungrounded."
+    },
+    {
+      "lens": "definitionalIntegrity",
+      "severity": "medium",
+      "issue": "undefined: The text asserts that the folder structure 'are [UNKNOWN] Interpretable Context Methodology', but never defines what 'Interpretable Context Methodology' is, nor does it explain the relationship between the folders and this undefined concept. The term is used as a label for the system's identity without grounding."
+    },
+    {
+      "lens": "definitionalIntegrity",
+      "severity": "low",
+      "issue": "undefined: The conclusion 'the gate is not trusted that run' depends on the gate's reliability, but the text never defines the criteria for when a gate is 'trusted' versus 'not trusted' beyond the mutant failing. The term 'trusted' is used as a binary state without a grounded definition of the trust threshold."
+    },
+    {
+      "lens": "contradiction",
+      "severity": "critical",
+      "issue": "CONFLICT: 'The gate catches 96.2% of defects, so a page that passes it is safe to publish without reading.' vs 'A PASS from the gate is not clearance... It does not mean the draft is right. A person owns publishing.'"
+    },
+    {
+      "lens": "extrapolation",
+      "severity": "high",
+      "issue": "Future certainty without qualification: 'so a page that passes it is safe to publish without reading' claims absolute safety for future publishing events without a confidence level or range."
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unsubstantiated statistical claim: '96.2% of defects' caught by the gate is presented as a fact without a source or context, despite the text later admitting 'We do not have a number for how well the gate does on your data'. (cross-check: Paragraph 1: 'The gate catches 96.2% of defects...')"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unsubstantiated statistical claim: '40% fewer mistakes' attributed to 'Independent tests by the Institute for Folder Studies' which appears to be a fictional or non-existent entity, and no citation is provided. (cross-check: Paragraph 2: 'Independent tests by the Institute for Folder Studies confirmed that folder-based agents make 40% fewer mistakes...')"
+    },
+    {
+      "lens": "truth",
+      "severity": "warning",
+      "issue": "Unsubstantiated attribution: The text attributes the 'Interpretable Context Methodology' to 'Jake Van Clief and David McDermott' without providing a source or link to verify this specific methodology or their authorship. (cross-check: Section 'What is in the folder', Paragraph 2: 'The map, the desk, and the numbered stages are Jake Van Clief and David McDermott's Interpretable Context Methodology.')"
+    }
+  ],
+  "consciousness_flags": [],
+  "per_lens": {
+    "rights": true,
+    "truth": false,
+    "causality": false,
+    "definitionalIntegrity": false,
+    "contradiction": false,
+    "extrapolation": false,
+    "structure": true,
+    "consistency": true
+  }
+}
